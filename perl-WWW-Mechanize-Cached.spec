@@ -34,7 +34,7 @@ requests without hammering a server impolitely.
 %description -l pl
 Modu³ Perla WWW::Cached::Mechanize wykorzystuje z hierarchiê
 Cache::Cache do implementacji mechanizmu buforowania. Pozwala on na
-powtarzanie zapytañ bez niegrzecznego nekania serwera.
+powtarzanie zapytañ bez niegrzecznego nêkania serwera.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
