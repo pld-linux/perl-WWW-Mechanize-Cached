@@ -4,8 +4,8 @@
 			# requires internet connectivity
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	WWW
-%define	pnam	Mechanize-Cached
+%define		pdir	WWW
+%define		pnam	Mechanize-Cached
 Summary:	WWW::Mechanize::Cached - cache response to be polite
 Summary(pl):	WWW::Mechanize::Cached - buforowanie odpowiedzi, aby zachowywaæ siê grzecznie
 Name:		perl-WWW-Mechanize-Cached
