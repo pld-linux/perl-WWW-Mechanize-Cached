@@ -6,12 +6,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	Mechanize-Cached
-Summary:	WWW::Mechanize::Cached - Cache response to be polite
+Summary:	WWW::Mechanize::Cached - cache response to be polite
+Summary(pl):	WWW::Mechanize::Cached - buforowanie odpowiedzi, aby zachowywaæ siê grzecznie
 Name:		perl-WWW-Mechanize-Cached
 Version:	1.32
 Release:	1
 # same as perl 5+
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	722c77e04e06a964e9389c0da3aa6fc4
@@ -27,9 +28,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-WWW::Cached::Mechanize uses the Cache::Cache hierarchy to implement
-a caching Mech. This lets one perform repeated requests without
-hammering a server impolitely.
+WWW::Cached::Mechanize Perl module uses the Cache::Cache hierarchy to
+implement a caching mechanism.  This lets one perform repeated
+requests without hammering a server impolitely.
+
+%description -l pl
+Modu³ Perla WWW::Cached::Mechanize wykorzystuje z hierarchiê
+Cache::Cache do implementacji mechanizmu buforowania. Pozwala on na
+powtarzanie zapytañ bez niegrzecznego nekania serwera.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -37,8 +43,8 @@ hammering a server impolitely.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make}
+
 %{?with_tests:%{__make} test}
 
 %install
