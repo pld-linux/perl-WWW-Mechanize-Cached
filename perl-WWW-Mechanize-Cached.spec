@@ -1,7 +1,7 @@
 #
 # Conditional build:
-# tests require internet connectivity
-%bcond_with	tests	# do not perform "make test"
+%bcond_with	tests	# do perform "make test"
+			# requires internet connectivity
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
