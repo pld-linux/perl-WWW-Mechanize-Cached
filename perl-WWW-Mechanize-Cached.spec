@@ -10,7 +10,7 @@ Summary:	WWW::Mechanize::Cached - cache response to be polite
 Summary(pl):	WWW::Mechanize::Cached - buforowanie odpowiedzi, aby zachowywaæ siê grzecznie
 Name:		perl-WWW-Mechanize-Cached
 Version:	1.32
-Release:	1
+Release:	2
 # same as perl 5+
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -21,7 +21,6 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Cache-Cache >= 1.02
 BuildRequires:	perl-WWW-Mechanize >= 1.00
-BuildRequires:	perl-Storable >= 2.08
 BuildRequires:	perl-Test-Simple >= 0.47
 %endif
 BuildArch:	noarch
