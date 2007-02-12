@@ -7,7 +7,7 @@
 %define		pdir	WWW
 %define		pnam	Mechanize-Cached
 Summary:	WWW::Mechanize::Cached - cache response to be polite
-Summary(pl):	WWW::Mechanize::Cached - buforowanie odpowiedzi, aby zachowywaæ siê grzecznie
+Summary(pl.UTF-8):   WWW::Mechanize::Cached - buforowanie odpowiedzi, aby zachowywaÄ‡ siÄ™ grzecznie
 Name:		perl-WWW-Mechanize-Cached
 Version:	1.32
 Release:	2
@@ -31,10 +31,10 @@ WWW::Cached::Mechanize Perl module uses the Cache::Cache hierarchy to
 implement a caching mechanism.  This lets one perform repeated
 requests without hammering a server impolitely.
 
-%description -l pl
-Modu³ Perla WWW::Cached::Mechanize wykorzystuje z hierarchiê
+%description -l pl.UTF-8
+ModuÅ‚ Perla WWW::Cached::Mechanize wykorzystuje z hierarchiÄ™
 Cache::Cache do implementacji mechanizmu buforowania. Pozwala on na
-powtarzanie zapytañ bez niegrzecznego nêkania serwera.
+powtarzanie zapytaÅ„ bez niegrzecznego nÄ™kania serwera.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
