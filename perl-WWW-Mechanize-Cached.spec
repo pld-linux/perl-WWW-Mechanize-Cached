@@ -9,13 +9,13 @@
 Summary:	WWW::Mechanize::Cached - cache response to be polite
 Summary(pl.UTF-8):	WWW::Mechanize::Cached - buforowanie odpowiedzi, aby zachowywać się grzecznie
 Name:		perl-WWW-Mechanize-Cached
-Version:	1.32
-Release:	3
+Version:	1.33
+Release:	1
 # same as perl 5+
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	722c77e04e06a964e9389c0da3aa6fc4
+# Source0-md5:	2b4d234cece2c3de5d1cf5ea23662bd2
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
