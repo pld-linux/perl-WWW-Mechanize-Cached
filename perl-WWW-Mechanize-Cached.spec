@@ -2,10 +2,10 @@
 # Conditional build:
 %bcond_with	tests	# do perform "make test"
 			# requires internet connectivity
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	WWW
 %define		pnam	Mechanize-Cached
+%include	/usr/lib/rpm/macros.perl
 Summary:	WWW::Mechanize::Cached - cache response to be polite
 Summary(pl.UTF-8):	WWW::Mechanize::Cached - buforowanie odpowiedzi, aby zachowywać się grzecznie
 Name:		perl-WWW-Mechanize-Cached
@@ -16,20 +16,21 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3923f445d657b030fcb16d727926fbe6
+URL:		http://search.cpan.org/dist/WWW-Mechanize-Cached/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Cache-Cache >= 1.02
-BuildRequires:	perl-WWW-Mechanize >= 1.00
 BuildRequires:	perl-Test-Simple >= 0.47
+BuildRequires:	perl-WWW-Mechanize >= 1.00
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 WWW::Cached::Mechanize Perl module uses the Cache::Cache hierarchy to
-implement a caching mechanism.  This lets one perform repeated
-requests without hammering a server impolitely.
+implement a caching mechanism. This lets one perform repeated requests
+without hammering a server impolitely.
 
 %description -l pl.UTF-8
 Moduł Perla WWW::Cached::Mechanize wykorzystuje z hierarchię
