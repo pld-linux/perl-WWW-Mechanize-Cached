@@ -5,7 +5,6 @@
 
 %define		pdir	WWW
 %define		pnam	Mechanize-Cached
-%include	/usr/lib/rpm/macros.perl
 Summary:	WWW::Mechanize::Cached - cache response to be polite
 Summary(pl.UTF-8):	WWW::Mechanize::Cached - buforowanie odpowiedzi, aby zachowywać się grzecznie
 Name:		perl-WWW-Mechanize-Cached
