@@ -8,21 +8,28 @@
 Summary:	WWW::Mechanize::Cached - cache response to be polite
 Summary(pl.UTF-8):	WWW::Mechanize::Cached - buforowanie odpowiedzi, aby zachowywać się grzecznie
 Name:		perl-WWW-Mechanize-Cached
-Version:	1.40
-Release:	2
+Version:	2.00
+Release:	1
 # same as perl 5+
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3923f445d657b030fcb16d727926fbe6
+Source0:	https://www.cpan.org/authors/id/O/OA/OALDERS/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	605e2c8609f465cf0e5c68fd017cac1f
 URL:		http://search.cpan.org/dist/WWW-Mechanize-Cached/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Cache-Cache >= 1.02
+BuildRequires:	perl-Data-Dump
+BuildRequires:	perl-File-XDG >= 1.03
+BuildRequires:	perl-Path-Tiny >= 0.150
 BuildRequires:	perl-Test-Simple >= 0.47
 BuildRequires:	perl-WWW-Mechanize >= 1.00
+BuildRequires:	perl-libwww >= 6.66
 %endif
+# default cache (Cache::FileCache under XDG cache home); without them it falls back to CHI in /tmp
+Requires:	perl-Cache-Cache >= 1.02
+Requires:	perl-File-XDG >= 1.03
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
